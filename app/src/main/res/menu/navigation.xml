@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/action_shop"
+        android:title="shop"
+        android:icon="@drawable/ic_store" />
+    <item android:id="@+id/action_cart"
+        android:title="cart"
+        android:icon="@drawable/ic_cart" />
+    <item android:id="@+id/action_likes"
+        android:title="likes"
+        android:icon="@drawable/ic_heart" />
+    <item android:id="@+id/action_profile"
+        android:title="profile"
+        android:icon="@drawable/ic_profile_avatar_svgrepo_com" />
+</menu>
