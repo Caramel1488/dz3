@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
     app:startDestination="@id/mainFragment">
 
     <fragment
         android:id="@+id/mainFragment"
         android:name="com.example.dz3.ui.MainFragment"
-        android:label="MainFragment" >
+        android:label="MainFragment"
+        tools:layout="@layout/main_fragment_layout">
         <action
             android:id="@+id/action_mainFragment_to_productFragment"
             app:destination="@id/productFragment" />
@@ -18,9 +20,11 @@
     <fragment
         android:id="@+id/productFragment"
         android:name="com.example.dz3.ui.ProductFragment"
-        android:label="ProductFragment" />
+        android:label="ProductFragment"
+        tools:layout="@layout/product_fragment_layout"/>
     <fragment
         android:id="@+id/cartFragment"
         android:name="com.example.dz3.ui.CartFragment"
-        android:label="CartFragment" />
+        android:label="CartFragment"
+        tools:layout="@layout/cart_fragment_layout"/>
 </navigation>
