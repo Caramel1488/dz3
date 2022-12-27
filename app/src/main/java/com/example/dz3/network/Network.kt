@@ -3,6 +3,8 @@ package com.example.dz3.network
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
+import retrofit2.converter.gson.GsonConverterFactory
+import retrofit2.create
 
 object Network {
 
@@ -14,5 +16,10 @@ object Network {
         .build()
 
     private val retrofit = Retrofit.Builder()
-        .baseUrl("")
+        .baseUrl("https://run.mocky.io/v3/")
+        .addConverterFactory(GsonConverterFactory.create())
+        .client(okHttpClient)
+        .build()
+    val api: Api
+        get() = retrofit.create()
 }

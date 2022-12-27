@@ -18,7 +18,8 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="1.0"
+        android:elevation="20dp"/>
 
     <ImageView
         android:id="@+id/imageInCircle"
@@ -29,16 +30,17 @@
         app:layout_constraintEnd_toEndOf="@+id/circle"
         app:layout_constraintStart_toStartOf="@id/circle"
         app:layout_constraintTop_toTopOf="@id/circle"
-        app:tint="@color/white" />
+        app:tint="@color/white"
+        android:elevation="20dp"/>
 
     <TextView
         android:id="@+id/catTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:text="try"
+        android:text="Phones"
         android:textColor="@color/black"
-        android:textSize="20sp"
+        android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@id/circle"
         app:layout_constraintStart_toStartOf="@id/circle"
