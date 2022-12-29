@@ -14,7 +14,6 @@ import com.example.dz3.databinding.MainFragmentLayoutBinding
 import com.example.dz3.network.Network
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
-import java.lang.Exception
 
 class MainFragment : Fragment(R.layout.main_fragment_layout) {
     private val binding: MainFragmentLayoutBinding by viewBinding(MainFragmentLayoutBinding::bind)
@@ -55,14 +54,13 @@ class MainFragment : Fragment(R.layout.main_fragment_layout) {
         }
         Log.d("Test", "Main Fragment items adapter initied")
         itemListAdapter = ItemsListAdapter()
-        with(binding.hotSalesList) {
+        with(binding.itemsList) {
             adapter = itemListAdapter
             layoutManager = GridLayoutManager(requireContext(), 2)
             setHasFixedSize(true)
         }
         catListAdapter.submitList(catList)
         searchSales()
-
         searchItems()
 
     }
@@ -75,14 +73,13 @@ class MainFragment : Fragment(R.layout.main_fragment_layout) {
     }
 
     fun searchItems() {
-        try {
-            lifecycleScope.launch(Dispatchers.IO) {
-                itemListAdapter.submitList(Network.api.getMainPage().bestSeller)
-                Log.d("Test", "Main Fragment items adapter filled")
-            }
-        }catch (e:Exception){
-            Log.e("Test", e.toString())
-        }
-    }
 
+        lifecycleScope.launch(Dispatchers.IO) {
+            itemListAdapter.submitList(Network.api.getMainPage().bestSeller)
+            Log.d("Test", "Main Fragment items adapter filled")
+
+
+        }
+
+    }
 }

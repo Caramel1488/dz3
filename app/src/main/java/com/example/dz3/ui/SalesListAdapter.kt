@@ -35,7 +35,7 @@ class SalesListAdapter: ListAdapter<DetailPhone, SalesListAdapter.Holder>(SalesD
                     .load(item.picture)
                     .placeholder(R.drawable.phone)
                     .into(picture)
-                title.text = item.title
+
             }
         }
 

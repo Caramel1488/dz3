@@ -38,7 +38,7 @@ class ItemsListAdapter :
                     .load(item.picture)
                     .placeholder(R.drawable.phone)
                     .into(picture)
-                price.text = item.price + "$"
+                price.text = item.disPrice + "$"
             }
         }
 

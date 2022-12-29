@@ -21,6 +21,8 @@ data class DetailPhone(
     val picture:String?,
     @SerializedName("price")
     val price:String?,
+    @SerializedName("discount_price")
+    val disPrice:String?,
     @SerializedName("rating")
     val rating:String?,
     @SerializedName("sd")
