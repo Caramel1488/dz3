@@ -11,5 +11,5 @@
         android:icon="@drawable/ic_heart" />
     <item android:id="@+id/action_profile"
         android:title="Profile"
-        android:icon="@drawable/ic_profile_avatar_svgrepo_com" />
+        android:icon="@drawable/ic_person" />
 </menu>

@@ -1,6 +1,5 @@
 package com.example.dz3.ui
 
-
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
@@ -8,41 +7,42 @@ import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.dz3.R
-import com.example.dz3.databinding.ItemCategLayoutBinding
-import com.example.dz3.databinding.ItemSaleLayoutBinding
-import com.example.dz3.model.DetailPhone
+import com.example.dz3.databinding.ItemCartLayoutBinding
+import com.example.dz3.model.CartPhone
 
-class SalesListAdapter: ListAdapter<DetailPhone, SalesListAdapter.Holder>(SalesDiffUtilCallback()) {
 
-    class SalesDiffUtilCallback : DiffUtil.ItemCallback<DetailPhone>() {
-        override fun areItemsTheSame(oldItem: DetailPhone, newItem: DetailPhone): Boolean {
+class CartListAdapter :
+    ListAdapter<CartPhone, CartListAdapter.Holder>(ItemDiffUtilCallback()) {
+
+    class ItemDiffUtilCallback : DiffUtil.ItemCallback<CartPhone>() {
+        override fun areItemsTheSame(oldItem: CartPhone, newItem: CartPhone): Boolean {
             return oldItem.id == newItem.id
         }
 
-        override fun areContentsTheSame(oldItem: DetailPhone, newItem: DetailPhone): Boolean {
+        override fun areContentsTheSame(oldItem: CartPhone, newItem: CartPhone): Boolean {
             return oldItem == newItem
         }
     }
 
     class Holder(
-        private val binding: ItemSaleLayoutBinding
+        private val binding: ItemCartLayoutBinding
     ) : RecyclerView.ViewHolder(binding.root) {
 
-        fun bind(item: DetailPhone) {
-
+        fun bind(item: CartPhone) {
             with(binding) {
                 Glide.with(itemView)
-                    .load(item.picture)
+                    .load(item.images)
                     .placeholder(R.drawable.phone)
-                    .into(picture)
-
+                    .into(imageImageView)
+                priceTextView.text = item.price + "$"
+                titleTextView.text = item.title
             }
         }
 
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): Holder {
-        val binding = ItemSaleLayoutBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+        val binding = ItemCartLayoutBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return Holder(binding)
     }
 

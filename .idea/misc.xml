@@ -10,16 +10,32 @@
         <entry key="..\:/dz3/app/src/main/res/layout/main_fragment_layout.xml" value="0.264" />
         <entry key="..\:/dz3/app/src/main/res/layout/product_fragment_layout.xml" value="0.1" />
         <entry key="..\:/dz3/app/src/main/res/menu/navigation.xml" value="0.25416666666666665" />
+        <entry key="..\:/vk/dz3/app/src/main/res/drawable-v24/cart.xml" value="0.2385" />
+        <entry key="..\:/vk/dz3/app/src/main/res/drawable/book.xml" value="0.1" />
         <entry key="..\:/vk/dz3/app/src/main/res/drawable/bottom_navigation.xml" value="0.1" />
         <entry key="..\:/vk/dz3/app/src/main/res/drawable/circle.xml" value="0.1655" />
         <entry key="..\:/vk/dz3/app/src/main/res/drawable/edit_text.xml" value="0.1655" />
+        <entry key="..\:/vk/dz3/app/src/main/res/drawable/ic_cart.xml" value="0.1" />
+        <entry key="..\:/vk/dz3/app/src/main/res/drawable/ic_filter.xml" value="0.1" />
+        <entry key="..\:/vk/dz3/app/src/main/res/drawable/ic_grass.xml" value="0.1835" />
+        <entry key="..\:/vk/dz3/app/src/main/res/drawable/ic_heart.xml" value="0.1" />
+        <entry key="..\:/vk/dz3/app/src/main/res/drawable/ic_person.xml" value="0.1" />
+        <entry key="..\:/vk/dz3/app/src/main/res/drawable/ic_photo_camera.xml" value="0.238" />
+        <entry key="..\:/vk/dz3/app/src/main/res/drawable/ic_proc.xml" value="0.238" />
+        <entry key="..\:/vk/dz3/app/src/main/res/drawable/ic_sd.xml" value="0.238" />
+        <entry key="..\:/vk/dz3/app/src/main/res/drawable/ic_storage.xml" value="0.238" />
         <entry key="..\:/vk/dz3/app/src/main/res/drawable/ircle.xml" value="0.23" />
         <entry key="..\:/vk/dz3/app/src/main/res/layout/activity_main.xml" value="0.16438703140830802" />
-        <entry key="..\:/vk/dz3/app/src/main/res/layout/cart_fragment_layout.xml" value="0.12318840579710146" />
+        <entry key="..\:/vk/dz3/app/src/main/res/layout/bottom_sheet_layout.xml" value="0.16438703140830802" />
+        <entry key="..\:/vk/dz3/app/src/main/res/layout/cart_fragment_layout.xml" value="0.25" />
+        <entry key="..\:/vk/dz3/app/src/main/res/layout/detail_phone_layout.xml" value="0.3546875" />
+        <entry key="..\:/vk/dz3/app/src/main/res/layout/item_cart_layout.xml" value="0.3546875" />
         <entry key="..\:/vk/dz3/app/src/main/res/layout/item_categ_layout.xml" value="0.3546875" />
         <entry key="..\:/vk/dz3/app/src/main/res/layout/item_layout.xml" value="0.3546875" />
         <entry key="..\:/vk/dz3/app/src/main/res/layout/item_sale_layout.xml" value="0.3546875" />
         <entry key="..\:/vk/dz3/app/src/main/res/layout/main_fragment_layout.xml" value="0.3546875" />
+        <entry key="..\:/vk/dz3/app/src/main/res/layout/product_fragment_layout.xml" value="0.3546875" />
+        <entry key="..\:/vk/dz3/app/src/main/res/layout/shop_fragment_layout.xml" value="0.3546875" />
       </map>
     </option>
   </component>

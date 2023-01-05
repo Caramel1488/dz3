@@ -3,28 +3,37 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/mainFragment">
+    app:startDestination="@id/action_shop">
 
     <fragment
-        android:id="@+id/mainFragment"
-        android:name="com.example.dz3.ui.MainFragment"
+        android:id="@+id/action_shop"
+        android:name="com.example.dz3.shop.ShopFragment"
         android:label="MainFragment"
-        tools:layout="@layout/main_fragment_layout">
+        tools:layout="@layout/shop_fragment_layout">
         <action
             android:id="@+id/action_mainFragment_to_productFragment"
             app:destination="@id/productFragment" />
         <action
-            android:id="@+id/action_mainFragment_to_cartFragment"
-            app:destination="@id/cartFragment" />
+            android:id="@+id/action_action_shop_to_bottomSheetFragment"
+            app:destination="@id/bottomSheetFragment" />
     </fragment>
     <fragment
         android:id="@+id/productFragment"
         android:name="com.example.dz3.ui.ProductFragment"
         android:label="ProductFragment"
-        tools:layout="@layout/product_fragment_layout"/>
+        tools:layout="@layout/detail_phone_layout"/>
     <fragment
-        android:id="@+id/cartFragment"
+        android:id="@+id/action_cart"
         android:name="com.example.dz3.ui.CartFragment"
         android:label="CartFragment"
         tools:layout="@layout/cart_fragment_layout"/>
+    <dialog
+        android:id="@+id/bottomSheetFragment"
+        android:name="com.example.dz3.shop.BottomSheetFragment"
+        android:label="BottomSheetFragment"
+        tools:layout="@layout/bottom_sheet_layout">
+        <action
+            android:id="@+id/action_bottomSheetFragment_to_action_shop"
+            app:destination="@id/action_shop" />
+    </dialog>
 </navigation>

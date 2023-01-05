@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/imagesList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/item_sale_layout" />
+
+        <TextView
+            android:id="@+id/titleTextview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="title"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/procImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_proc"
+                app:layout_constraintEnd_toStartOf="@+id/cameraImageView"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintHorizontal_chainStyle="spread_inside"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="@color/grey" />
+
+            <TextView
+                android:id="@+id/procTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="proc"
+                android:textColor="@color/grey"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="@id/procImageView"
+                app:layout_constraintStart_toStartOf="@id/procImageView"
+                app:layout_constraintTop_toBottomOf="@id/procImageView" />
+
+            <ImageView
+                android:id="@+id/cameraImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_photo_camera"
+                app:layout_constraintEnd_toStartOf="@+id/sdImageView"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/procImageView"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="@color/grey" />
+
+            <TextView
+                android:id="@+id/cameraTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="camera"
+                android:textColor="@color/grey"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="@id/cameraImageView"
+                app:layout_constraintStart_toStartOf="@id/cameraImageView"
+                app:layout_constraintTop_toBottomOf="@id/cameraImageView" />
+
+            <ImageView
+                android:id="@+id/sdImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_sd"
+                app:layout_constraintEnd_toStartOf="@+id/storageImageView"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/cameraImageView"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="@color/grey" />
+
+            <TextView
+                android:id="@+id/sdTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="sd"
+                android:textColor="@color/grey"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="@id/sdImageView"
+                app:layout_constraintStart_toStartOf="@id/sdImageView"
+                app:layout_constraintTop_toBottomOf="@id/sdImageView" />
+
+            <ImageView
+                android:id="@+id/storageImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_storage"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/sdImageView"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="@color/grey" />
+
+            <TextView
+                android:id="@+id/storageTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="proc"
+                android:textColor="@color/grey"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="@id/storageImageView"
+                app:layout_constraintStart_toStartOf="@id/storageImageView"
+                app:layout_constraintTop_toBottomOf="@id/storageImageView" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <Button
+            android:id="@+id/addButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="add" />
+    </LinearLayout>
+
+
+</ScrollView>
